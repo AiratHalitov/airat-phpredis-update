@@ -3,9 +3,9 @@
 
 ## Установка и запуск:
 ```bash
-wget https://raw.githubusercontent.com/AiratHalitov/airat-phpredis-update/main/airat-phpredis-update.sh
+git clone https://github.com/AiratHalitov/airat-phpredis-update
 
-chmod +x airat-phpredis-update.sh
+cd airat-phpredis-update
 
 sudo ./airat-phpredis-update.sh
 ```
