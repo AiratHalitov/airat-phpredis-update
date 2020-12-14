@@ -13,3 +13,4 @@ sudo ./airat-phpredis-update.sh
 **Примечания:** 
 - Чтобы использовать `phpize` предварительно нужно установить пакет `php-dev`
 - Не забудь перед запуском скрипта обновить версию phpredis в переменной `VER`
+- Узнать актуальную версию phpredis можно [тут](https://github.com/phpredis/phpredis/blob/develop/Changelog.md)
