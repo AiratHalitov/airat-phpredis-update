@@ -14,3 +14,4 @@ sudo ./airat-phpredis-update.sh
 - Чтобы использовать `phpize` предварительно нужно установить пакет `php-dev`
 - Не забудь перед запуском скрипта обновить версию `phpredis` в переменной `VER`
 - Узнать актуальную версию `phpredis` можно [тут](https://github.com/phpredis/phpredis/blob/develop/Changelog.md)
+- В конце не забудь скопировать файл `redis.ini` в папку `/etc/php/7.4/apache2/conf.d/` (проверь версию PHP) и обновить в нём путь до файла `redis.so`
