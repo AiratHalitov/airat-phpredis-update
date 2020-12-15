@@ -16,11 +16,9 @@ if [ -f $VER.zip ]; then
 
     cd phpredis-$VER
     phpize && ./configure && make -j $NP && sudo make install
-    
+
     # check the right path to redis.so in redis.ini
     #cp redis.ini /etc/php/$PHPVER/apache2/conf.d/redis.ini
-    
+
     echo "Done!"
 fi
-
-
