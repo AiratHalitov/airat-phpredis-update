@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author: Airat Halitov
+# GitHub: https://github.com/AiratHalitov/airat-phpredis-update
+# License: GPLv3
+
 # don't forget update version!
 # check version from https://github.com/phpredis/phpredis/blob/develop/Changelog.md
 VER=5.3.2
