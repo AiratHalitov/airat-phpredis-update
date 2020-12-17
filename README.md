@@ -1,5 +1,5 @@
 # airat-phpredis-update
-Скрипт для быстрой установки и/или обновления `phpredis` на сервере
+Скрипт для быстрой установки и/или обновления [phpredis](https://github.com/phpredis/phpredis) на сервере
 
 ## Установка и запуск:
 ```bash
