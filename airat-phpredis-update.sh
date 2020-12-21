@@ -13,13 +13,13 @@ NP=$(nproc)
 rm -rf phpredis-$VER
 rm -rf $VER.zip
 
-wget https://github.com/phpredis/phpredis/archive/$VER.zip > /dev/null 2>&1
+wget https://github.com/phpredis/phpredis/archive/$VER.zip &> /dev/null
 
 if [ -f $VER.zip ]; then
-    unzip $VER.zip > /dev/null 2>&1 && rm -rf $VER.zip
+    unzip $VER.zip &> /dev/null && rm -rf $VER.zip
 
     cd phpredis-$VER
-    phpize > /dev/null 2>&1 && ./configure > /dev/null 2>&1 && make -j $NP > /dev/null 2>&1 && sudo make install && echo "Done!"
+    phpize &> /dev/null && ./configure &> /dev/null && make -j $NP &> /dev/null && sudo make install && echo "Done!"
 
     # check the right path to redis.so in redis.ini
     #cp redis.ini /etc/php/$PHPVER/apache2/conf.d/redis.ini
