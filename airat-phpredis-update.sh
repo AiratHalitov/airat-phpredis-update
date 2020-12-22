@@ -13,10 +13,10 @@ NP=$(nproc)
 rm -rf phpredis-$VER
 rm -rf $VER.zip
 
-wget https://github.com/phpredis/phpredis/archive/$VER.zip &> /dev/null
+wget -q https://github.com/phpredis/phpredis/archive/$VER.zip
 
 if [ -f $VER.zip ]; then
-    unzip $VER.zip &> /dev/null && rm -rf $VER.zip
+    unzip -q $VER.zip && rm -rf $VER.zip
 
     cd phpredis-$VER
     phpize &> /dev/null && ./configure &> /dev/null && make -j $NP &> /dev/null && sudo make install && echo "Done!"
