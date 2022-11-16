@@ -6,7 +6,7 @@
 
 # don't forget update version!
 # check version from https://github.com/phpredis/phpredis/blob/develop/Changelog.md
-VER=5.3.2
+VER=5.3.7
 PHPVER=7.4
 NP=$(nproc)
 
