@@ -17,7 +17,7 @@ NP=$(nproc)
 rm -rf phpredis-$VER
 rm -rf $VER.zip
 
-wget -q https://github.com/phpredis/phpredis/archive/$VER.zip
+wget -q https://github.com/phpredis/phpredis/archive/refs/tags/$VER.zip
 
 if [ -f $VER.zip ]; then
     unzip -q $VER.zip && rm -rf $VER.zip
